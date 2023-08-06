@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-FILES=$(go list ./...  | grep -v /vendor/)
-exec go build $FILES
+
+# exewcute build.sh on your project
+# Build binaries to ensure the program can be built
+make build || exit 1
